@@ -14,7 +14,7 @@ from joblib import Memory
 
 import torch
 
-from core.network import *
+from jorldy.core.network import *
 
 ## ======================================================================== ##
 
@@ -31,7 +31,7 @@ class Common:
 
         self.dir_fmri = join(self.dir_root,'fmri_data')
         self.dir_mask = join(self.dir_fmri, 'masks')
-        self.dir_model = join(self.dir_root,'model')
+        self.dir_config = '/home/sungbeenpark/Github/labs/DRN/scripts/jorldy/config'
         
         self.dir_cache = join(self.dir_root, 'cache')
         
@@ -46,7 +46,7 @@ class network(Common):
         self.network.eval().to(self.device)
 
         self.ckpt = torch.load(
-            join(self.dir_model,'drone_hanyang_mlagent.ppo/level2.ckpt')
+            join(self.dir_config,'drone_hanyang_mlagent.ppo/level2.ckpt')
             , map_location=self.device
         )
 
