@@ -15,7 +15,7 @@ rm -rf ~/anaconda3
 ### 1. Prerequisites
 The `anaconda-navigator` package is installed by default with Anaconda Distribution and includes the dependency package `qt`. All of the dependencies for `qt` should also be installed by default, but installing the following extended dependencies might be required for certain versions of Anaconda Distribution in order to use GUI (Graphical User Interface) packages with Linux(Debian):
 ```
-pt-get install libgl1-mesa-glx libegl1-mesa libxrandr2 libxrandr2 libxss1 libxcursor1 libxcomposite1 libasound2 libxi6 libxtst6
+gpt-get install libgl1-mesa-glx libegl1-mesa libxrandr2 libxrandr2 libxss1 libxcursor1 libxcomposite1 libasound2 libxi6 libxtst6
 ```
 
 ### 2. Installation
