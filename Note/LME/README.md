@@ -1,7 +1,10 @@
+## Creating a virtual environment for LME analysis
+
 '''
 conda create --name LME python=3.9
 conda activate LME
 '''
+
 '''
 pip install numpy matplotlib pandas seaborn ipykernel
 python -m ipykernel install --user --name LME --display-name LME
