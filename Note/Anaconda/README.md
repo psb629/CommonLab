@@ -33,7 +33,7 @@ bash <dir_download>/Anaconda3-2021.11-Linux-x86_64.sh
 5. Anaconda recommends you enter “yes” to initialize Anaconda Distribution by running `conda init`.
 If you enter “no”, then conda will not modify your shell scripts at all. In order to initialize conda after the installation process is done, run the following commands:
 ```
-source <PATH_TO_CONDA>/bin/activate
+source ~/anaconda3/bin/activate
 conda init
 ```
 6. Close and re-open your terminal window for the installation to take effect, or enter the command source `~/.bashrc` to refresh the terminal.
