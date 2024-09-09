@@ -46,3 +46,8 @@ conda config --set auto_activate_base True
 conda config --set auto_activate_base False
 
 ```
+
+## 3. To update Anaconda
+```
+conda update -n base -c defaults conda
+```
