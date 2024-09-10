@@ -6,8 +6,11 @@ conda activate LME
 ```
 
 ```
-pip install numpy matplotlib pandas seaborn ipykernel
+pip install pandas scipy ipykernel
 python -m ipykernel install --user --name LME --display-name LME
-conda install -c ejolly -c conda-forge -c defaults pymer4
+```
+
+```
 conda install -c conda-forge statsmodels
+conda install -c ejolly -c conda-forge -c defaults pymer4
 ```
