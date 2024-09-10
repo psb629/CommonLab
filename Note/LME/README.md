@@ -66,7 +66,7 @@ conda activate LME
 ```
 
 ```
-pip install pandas scipy ipykernel
+pip install numpy pandas scipy ipykernel
 python -m ipykernel install --user --name LME --display-name LME
 ```
 
