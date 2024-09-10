@@ -11,6 +11,8 @@ rm -rf ~/anaconda3
 ```
 4. Close and reopen your terminal to refresh it. You should no longer see (base) in your terminal prompt.
 
+---
+
 ## 1-i. Installing on Linux
 ### 1. Prerequisites
 The `anaconda-navigator` package is installed by default with Anaconda Distribution and includes the dependency package `qt`. All of the dependencies for `qt` should also be installed by default, but installing the following extended dependencies might be required for certain versions of Anaconda Distribution in order to use GUI (Graphical User Interface) packages with Linux(Debian):
@@ -47,7 +49,50 @@ conda config --set auto_activate_base False
 
 ```
 
-## 3. To update Anaconda
+### 3. To update Anaconda
 ```
 conda update -n base -c defaults conda
+```
+
+---
+
+## 2-i. Create a new one
+```
+conda create --name <name_env> python=<version>
+```
+
+## 2-ii. Import the old one
+```
+conda env create -f <file_yaml>
+```
+
+cf)
+- check the list
+```
+conda info --env
+```
+
+---
+
+## 3. Set Jupyter Kernel
+```
+python -m ipykernel install --user --name <name_env> --display-name <name_env>
+```
+
+---
+
+## 4. Remove an Anaconda virtual enviroment clearly
+
+### i. Enviroment
+```
+conda remove --name <name_env> --all
+```
+
+### ii. Juypter Kernel
+```
+rm -rf $HOME/.local/share/jupyter/kernels/<name_env>
+```
+or
+```
+jupyter kernelspec uninstall <name_env>
 ```
