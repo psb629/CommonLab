@@ -10,6 +10,7 @@ conda env create -f GP.yaml
 =========================================================
 
 ## Behav_data
+- [Subject list](https://docs.google.com/spreadsheets/d/1RXrQy2Sx1xxa4fj-b_GTxuI0PcqJxjsQZtC4GcUVRf8/edit?usp=sharing)
 
 ### day1 (r00)
 - [extract.regressor.move-stop.py](https://github.com/psb629/labs/blob/master/GP/scripts/extract.regressor.move-stop.py) -s subject
